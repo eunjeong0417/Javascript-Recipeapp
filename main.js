@@ -38,9 +38,10 @@ function generateHTML(results) {
             <img src=${result.recipe.image} alt="food image">
                 <div class="item-el">
                     <h2 class="item-title">${result.recipe.label}</h2>
-                    <a href="${result.recipe.url}">🔎 Recipe</a>
+                    <div class="item-recipe"><a href="${result.recipe.url}"> Recipe</a></div>
                 </div>
                 <p class="item-data">CuisineType: ${result.recipe.cuisineType}</p>
+                <p class="item-data">Calories: ${result.recipe.calories.toFixed(2)}</p>
             </div>
             `
     })
