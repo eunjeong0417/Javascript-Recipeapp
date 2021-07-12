@@ -3,4 +3,4 @@
 --CSS - Grid, Flex, transform
 
 
-https://user-images.githubusercontent.com/82692118/125236454-f4c4e300-e31e-11eb-8816-e5c2d5f3c957.mp4
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/82692118/125236577-35246100-e31f-11eb-97ca-39d289405aee.gif)
