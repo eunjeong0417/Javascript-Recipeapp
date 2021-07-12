@@ -1,6 +1,6 @@
 # Javascript-Recipeapp
 
-- API(async, await) 
+- REST API(async, await) 
 - CSS Grid, Flex, transform
 
 
