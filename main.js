@@ -3,7 +3,7 @@ const APP_ID = 'f2cf717f';
 const APP_KEY = '274f67ac048c6ca7dc21ec0c6e4f1a27';
 
 
-const formEl = document.querySelector('.header-search')
+const formEl = document.querySelector('.header-search');
 
 //form 태그에 submit 이벤트 추가
 formEl.addEventListener('submit', (e) => {
@@ -12,12 +12,12 @@ formEl.addEventListener('submit', (e) => {
     const query = e.target.querySelector('input').value;
 //query에 input의 값을 넣어준다
 
-    fetchAPI();
-
+//fetchAPI 함수의 인자로 query를 보낸다
+    fetchAPI(query);
 })
 
-async function fetchAPI() {
-    const baseURL = `https://api.edamam.com/search?q=pasta&app_id=${APP_ID}&app_key=${APP_KEY}&to=20`
+async function fetchAPI(query) {
+    const baseURL = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&to=20`
     const response = await fetch(baseURL);
     const data = await response.json();
     generateHTML(data.hits);
